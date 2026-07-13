@@ -1,243 +1,108 @@
-tr<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bautizo de Lisandro</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8f3ed;
+  color: #444;
+  text-align: center;
 }
 
-body{
-font-family:Poppins,sans-serif;
-background:#f8f7f3;
-color:#4b4b4b;
+.portada {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#ffffff, #f8f3ed);
 }
 
-header{
-height:100vh;
-background:linear-gradient(rgba(255,255,255,.35),rgba(255,255,255,.55)),
-url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1500&q=80');
-background-size:cover;
-background-position:center;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
+h1 {
+  font-size: 45px;
+  color: #b08b57;
 }
 
-.hero{
-background:rgba(255,255,255,.78);
-padding:40px;
-border-radius:25px;
-max-width:600px;
-backdrop-filter:blur(10px);
+h2 {
+  font-weight: normal;
+  color: #777;
 }
 
-.hero h1{
-font-family:'Cormorant Garamond',serif;
-font-size:60px;
-color:#58725b;
+.menu {
+  margin-top: 30px;
 }
 
-.hero h2{
-margin-top:10px;
-font-weight:300;
-letter-spacing:4px;
+.boton {
+  display: block;
+  margin: 12px auto;
+  width: 220px;
+  padding: 15px;
+  background: #b08b57;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
 }
 
-.hero p{
-margin-top:20px;
-line-height:1.8;
+.seccion {
+  padding: 40px 20px;
 }
 
-.boton{
-display:inline-block;
-margin-top:30px;
-padding:15px 35px;
-background:#8ba98d;
-color:white;
-text-decoration:none;
-border-radius:40px;
-transition:.3s;
+.tarjeta {
+  background: white;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 20px;
+  max-width: 400px;
+  box-shadow: 0 5px 15px #ddd;
 }
-
-.boton:hover{
-background:#6d8c70;
-}
-
-section{
-padding:70px 25px;
-max-width:900px;
-margin:auto;
-}
-
-.tarjeta{
-background:white;
-border-radius:20px;
-padding:35px;
-box-shadow:0 15px 40px rgba(0,0,0,.08);
-margin-bottom:35px;
-}
-
-h3{
-font-family:'Cormorant Garamond',serif;
-font-size:38px;
-color:#58725b;
-margin-bottom:20px;
-}
-
-.info{
-font-size:18px;
-line-height:2;
-}
-
-.voto button{
-margin:10px;
-padding:12px 25px;
-border:none;
-background:#8ba98d;
-color:white;
-border-radius:30px;
-cursor:pointer;
-}
-
-footer{
-background:#58725b;
-color:white;
-padding:40px;
-text-align:center;
-margin-top:40px;
-}
-
 </style>
 
 </head>
 
 <body>
 
-<header>
+<div class="portada">
+<h1>Mi Bautizo</h1>
+<h2>Lisandro</h2>
 
-<div class="hero">
+<p>Con mucha alegría comparto este día especial con ustedes</p>
 
-<h1>Lisandro</h1>
-
-<h2>Mi Bautizo</h2>
-
-<p>
-
-Un día lleno de amor, fe y bendiciones.
-
-Gracias por acompañarnos en este momento tan especial.
-
-</p>
-
-<a href="#detalles" class="boton">
-
-Ver invitación
-
-</a>
+<div class="menu">
+<a class="boton" href="#dia">Día del Bautizo</a>
+<a class="boton" href="#hora">Hora</a>
+<a class="boton" href="#recuerdos">Recuerdos</a>
+</div>
 
 </div>
 
-</header>
 
-<section id="detalles">
-
+<div id="dia" class="seccion">
 <div class="tarjeta">
-
-<h3>Detalles del Bautizo</h3>
-
-<div class="info">
-
-📅 Fecha: <strong>Próximamente</strong><br>
-
-🕒 Hora: <strong>Próximamente</strong><br>
-
-⛪ Iglesia: <strong>Próximamente</strong><br>
-
-📍 Lugar: <strong>Se anunciará muy pronto</strong>
-
+<h2>Día del Bautizo</h2>
+<p>Septiembre 2026</p>
+</div>
 </div>
 
-</div>
 
+<div id="hora" class="seccion">
 <div class="tarjeta">
-
-<h3>Votación del Restaurante</h3>
-
-<p>¿Dónde te gustaría celebrar con nosotros?</p>
-
-<div class="voto">
-
-<button onclick="votar('Restaurante 1')">Restaurante 1</button>
-
-<button onclick="votar('Restaurante 2')">Restaurante 2</button>
-
-<button onclick="votar('Restaurante 3')">Restaurante 3</button>
-
+<h2>Hora</h2>
+<p>Aquí colocaremos la hora del evento</p>
+</div>
 </div>
 
-<p id="resultado"></p>
 
-</div>
-
+<div id="recuerdos" class="seccion">
 <div class="tarjeta">
-
-<h3>Comparte tus recuerdos</h3>
-
-<p>
-
-Después del bautizo podrás subir tus fotos para crear un hermoso álbum con todos nuestros recuerdos.
-
-</p>
-
+<h2>Mis recuerdos</h2>
+<p>Escanea el código QR y comparte tus fotos con Lisandro</p>
 </div>
-
-<div class="tarjeta">
-
-<h3>Gracias</h3>
-
-<p>
-
-Gracias por acompañarnos en uno de los días más importantes en la vida de Lisandro.
-
-Su cariño significa mucho para nuestra familia.
-
-</p>
-
 </div>
-
-</section>
-
-<footer>
-
-Con amor 💚
-
-<br>
-
-Familia de Lisandro
-
-</footer>
-
-<script>
-
-function votar(restaurante){
-
-document.getElementById("resultado").innerHTML="💚 Gracias por votar por "+restaurante;
-
-}
-
-</script>
 
 </body>
-
-</html> 
+</html>
