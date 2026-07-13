@@ -3,106 +3,277 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Bautizo de Lisandro</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f8f3ed;
-  color: #444;
-  text-align: center;
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-.portada {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(#ffffff, #f8f3ed);
+body{
+font-family:'Poppins',sans-serif;
+background:#f8f7f2;
+color:#444;
+overflow-x:hidden;
 }
 
-h1 {
-  font-size: 45px;
-  color: #b08b57;
+header{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:25px;
+background:linear-gradient(rgba(255,255,255,.55),rgba(255,255,255,.65)),
+url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1400&q=80');
+background-size:cover;
+background-position:center;
 }
 
-h2 {
-  font-weight: normal;
-  color: #777;
+h1{
+font-family:'Cormorant Garamond',serif;
+font-size:60px;
+color:#8b7d5b;
 }
 
-.menu {
-  margin-top: 30px;
+h2{
+font-family:'Cormorant Garamond',serif;
+font-size:32px;
+margin-bottom:20px;
+color:#8b7d5b;
 }
 
-.boton {
-  display: block;
-  margin: 12px auto;
-  width: 220px;
-  padding: 15px;
-  background: #b08b57;
-  color: white;
-  border-radius: 30px;
-  text-decoration: none;
+p{
+font-size:18px;
+line-height:1.8;
 }
 
-.seccion {
-  padding: 40px 20px;
+.boton{
+margin-top:35px;
+background:#8ea68a;
+color:white;
+padding:15px 35px;
+border-radius:50px;
+text-decoration:none;
+font-size:18px;
+transition:.3s;
 }
 
-.tarjeta {
-  background: white;
-  margin: 20px auto;
-  padding: 25px;
-  border-radius: 20px;
-  max-width: 400px;
-  box-shadow: 0 5px 15px #ddd;
+.boton:hover{
+background:#768c72;
 }
+
+nav{
+position:sticky;
+top:0;
+background:white;
+padding:18px;
+display:flex;
+justify-content:center;
+gap:25px;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+z-index:999;
+}
+
+nav a{
+text-decoration:none;
+color:#8b7d5b;
+font-weight:500;
+}
+
+section{
+padding:80px 25px;
+max-width:900px;
+margin:auto;
+text-align:center;
+}
+
+.tarjeta{
+background:white;
+padding:35px;
+border-radius:25px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+margin-top:25px;
+}
+
+#contador{
+display:flex;
+justify-content:center;
+gap:18px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.caja{
+background:#8ea68a;
+color:white;
+padding:20px;
+border-radius:20px;
+width:95px;
+}
+
+.numero{
+font-size:32px;
+font-weight:bold;
+}
+
+footer{
+padding:40px;
+text-align:center;
+background:#8ea68a;
+color:white;
+}
+
 </style>
-
 </head>
 
 <body>
 
-<div class="portada">
-<h1>Mi Bautizo</h1>
-<h2>Lisandro</h2>
+<header>
 
-<p>Con mucha alegría comparto este día especial con ustedes</p>
+<h1>Lisandro</h1>
 
-<div class="menu">
-<a class="boton" href="#dia">Día del Bautizo</a>
-<a class="boton" href="#hora">Hora</a>
-<a class="boton" href="#recuerdos">Recuerdos</a>
-</div>
+<p>Con la bendición de Dios y el amor de nuestra familia,
+queremos compartir contigo este día tan especial.</p>
 
-</div>
+<a class="boton" href="#menu">
+Ver Invitación
+</a>
 
+</header>
 
-<div id="dia" class="seccion">
+<nav id="menu">
+
+<a href="#dia">Día</a>
+
+<a href="#confirmar">Confirmar</a>
+
+<a href="#recuerdos">Recuerdos</a>
+
+</nav>
+<section id="dia">
+
+<h2>El Bautizo</h2>
+
 <div class="tarjeta">
-<h2>Día del Bautizo</h2>
-<p>Septiembre 2026</p>
-</div>
+
+<p><strong>Fecha:</strong> Septiembre 2026</p>
+<br>
+
+<p><strong>Hora:</strong> Próximamente</p>
+<br>
+
+<p><strong>Lugar:</strong> Próximamente</p>
+
 </div>
 
+</section>
 
-<div id="hora" class="seccion">
+<section>
+
+<h2>Cuenta regresiva</h2>
+
+<div id="contador">
+
+<div class="caja">
+<div id="dias" class="numero">0</div>
+Días
+</div>
+
+<div class="caja">
+<div id="horas" class="numero">0</div>
+Horas
+</div>
+
+<div class="caja">
+<div id="minutos" class="numero">0</div>
+Min
+</div>
+
+<div class="caja">
+<div id="segundos" class="numero">0</div>
+Seg
+</div>
+
+</div>
+
+</section>
+
+<section id="confirmar">
+
+<h2>Confirmación</h2>
+
 <div class="tarjeta">
-<h2>Hora</h2>
-<p>Aquí colocaremos la hora del evento</p>
-</div>
+
+<p>
+Próximamente encontrarás aquí el botón para confirmar tu asistencia.
+</p>
+
+<br>
+
+<a class="boton" href="#">
+Confirmar asistencia
+</a>
+
 </div>
 
+</section>
 
-<div id="recuerdos" class="seccion">
+<section id="recuerdos">
+
+<h2>Comparte tus recuerdos</h2>
+
 <div class="tarjeta">
-<h2>Mis recuerdos</h2>
-<p>Escanea el código QR y comparte tus fotos con Lisandro</p>
+
+<p>
+Después del bautizo podrás escanear un código QR para subir todas las fotos y videos que tomes ese día.
+</p>
+
+<br>
+
+<p><strong>Aquí colocaremos el código QR.</strong></p>
+
 </div>
-</div>
+
+</section>
+
+<footer>
+
+Con mucho cariño ❤️<br>
+Familia de Lisandro
+
+</footer>
+
+<script>
+
+const fecha=new Date("September 20, 2026 12:00:00").getTime();
+
+setInterval(function(){
+
+const ahora=new Date().getTime();
+
+const diferencia=fecha-ahora;
+
+document.getElementById("dias").innerHTML=Math.floor(diferencia/(1000*60*60*24));
+
+document.getElementById("horas").innerHTML=Math.floor((diferencia%(1000*60*60*24))/(1000*60*60));
+
+document.getElementById("minutos").innerHTML=Math.floor((diferencia%(1000*60*60))/(1000*60));
+
+document.getElementById("segundos").innerHTML=Math.floor((diferencia%(1000*60))/1000);
+
+},1000);
+
+</script>
 
 </body>
 </html>
